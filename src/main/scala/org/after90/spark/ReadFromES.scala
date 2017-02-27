@@ -9,6 +9,9 @@ object ReadFromES {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("ReadFromES").setMaster("local[*]")
     conf.set("es.nodes", "http://localhost:9200")
+    conf.set("es.net.http.auth.user", "elastic")
+    conf.set("es.net.http.auth.pass", "changeme")
+
     val sc = new SparkContext(conf)
     val RDD = sc.esRDD("spark/docs")
     println(RDD.count)
