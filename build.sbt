@@ -25,7 +25,7 @@ lazy val root = (project in file(".")).
     libraryDependencies += spark,
     //libraryDependencies += mllib,
     //libraryDependencies += hdfs
-    //libraryDependencies += spark_streaming_kafka,
+    libraryDependencies += spark_streaming_kafka,
     //libraryDependencies += elasticsearch_hadoop,
     libraryDependencies += elasticsearch_spark
   )
