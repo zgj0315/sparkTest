@@ -1,8 +1,8 @@
 package org.after90.sparkStreaming
 
 import org.apache.spark.SparkConf
-import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 /**
   * Created by zhaogj on 01/03/2017.
