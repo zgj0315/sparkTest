@@ -10,7 +10,6 @@ resolvers ++= Seq(
   "cloudera" at "https://repository.cloudera.com/artifactory/cloudera-repos/"
 )
 
-
 val spark = "org.apache.spark" % "spark-core_2.10" % "1.5.0-cdh5.5.0"
 val mllib = "org.apache.spark" % "spark-mllib_2.10" % "1.5.0-cdh5.5.0" excludeAll (ExclusionRule(organization = "javax.servlet"))
 val hdfs = "org.apache.hadoop" % "hadoop-hdfs" % "2.6.0-cdh5.5.0" excludeAll (ExclusionRule(organization = "javax.servlet"))
