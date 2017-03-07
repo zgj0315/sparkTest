@@ -6,13 +6,15 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.11.8"
 )
 
-val spark = "org.apache.spark" % "spark-core_2.11" % "2.1.0"
+val spark_core = "org.apache.spark" % "spark-core_2.11" % "2.1.0"
+val spark_sql = "org.apache.spark" % "spark-sql_2.11" % "2.1.0"
 val hadoop = "org.apache.hadoop" % "hadoop-client" % "2.7.3"
 
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(
     name := "SparkTest",
-    libraryDependencies += spark,
+    libraryDependencies += spark_core,
+    libraryDependencies += spark_sql,
     libraryDependencies += hadoop
   )
