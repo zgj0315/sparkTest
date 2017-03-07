@@ -11,7 +11,8 @@ object SparkSessionTest {
       .master("local[*]")
       .appName("spark session example")
       .getOrCreate()
-
+    val df = spark.read.json("./data/people.json")
+    df.show()
     spark.stop()
   }
 }
