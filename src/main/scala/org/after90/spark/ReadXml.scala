@@ -12,7 +12,7 @@ object ReadXml {
     val conf = new SparkConf().setAppName("ReadXml").setMaster("local[*]")
     val sc = new SparkContext(conf)
     val xmlRDD = sc.textFile("./data/fairscheduler.xml")
-    
+
     /**
       * 控制文件不被分片的前提下，手工组合出bcp文件
       */
