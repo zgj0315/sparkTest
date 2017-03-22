@@ -12,7 +12,7 @@ object ReadFromKafka {
     val conf = new SparkConf().setMaster("local[*]").setAppName("ReadFromKafka")
     val ssc = new StreamingContext(conf, Seconds(10))
     val zkQuorum = "localhost:2181"
-    val group = "com.qzt360"
+    val group = "org.after90"
     val topics = "topic_test"
     val numThreads = 1
 
