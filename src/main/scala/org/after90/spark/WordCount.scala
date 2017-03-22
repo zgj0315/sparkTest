@@ -16,5 +16,6 @@ object WordCount {
       .map(word => (word, 1))
       .reduceByKey(_ + _)
     println(wordCount)
+    sc.stop()
   }
 }
