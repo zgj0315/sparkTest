@@ -22,6 +22,7 @@ lazy val root = (project in file(".")).
     //以下注释掉的部分是研究如何使用jdk1.7编译程序，没搞明白，暂且搁置
     // append several options to the list of options passed to the Java compiler
     //javacOptions ++= Seq("-source", "1.7", "-target", "1.7"),
+    //scalacOptions += "-target:jvm-1.7",
 
     // fork a new JVM for 'run' and 'test:run'
     //fork := true,
