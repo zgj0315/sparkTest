@@ -11,10 +11,10 @@ resolvers ++= Seq(
   "cloudera" at "https://repository.cloudera.com/artifactory/cloudera-repos/"
 )
 
-val spark = "org.apache.spark" % "spark-core_2.10" % "1.6.0-cdh5.7.0"
-val mllib = "org.apache.spark" % "spark-mllib_2.10" % "1.6.0-cdh5.7.0" excludeAll (ExclusionRule(organization = "javax.servlet"))
-val hdfs = "org.apache.hadoop" % "hadoop-hdfs" % "2.6.0-cdh5.7.0" excludeAll (ExclusionRule(organization = "javax.servlet"))
-val spark_streaming_kafka = "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.6.0-cdh5.7.0" excludeAll (ExclusionRule(organization = "javax.servlet"))
+val spark = "org.apache.spark" % "spark-core_2.10" % "1.3.0-cdh5.4.5"
+val mllib = "org.apache.spark" % "spark-mllib_2.10" % "1.3.0-cdh5.4.5" excludeAll (ExclusionRule(organization = "javax.servlet"))
+val hdfs = "org.apache.hadoop" % "hadoop-hdfs" % "2.6.0-cdh5.4.5" excludeAll (ExclusionRule(organization = "javax.servlet"))
+val spark_streaming_kafka = "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.3.0-cdh5.4.5" excludeAll (ExclusionRule(organization = "javax.servlet"))
 
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
