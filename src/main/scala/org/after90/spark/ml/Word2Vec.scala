@@ -1,9 +1,5 @@
 package org.after90.spark.ml
 
-import org.apache.spark.ml.feature.Word2Vec
-import org.apache.spark.ml.linalg.Vector
-import org.apache.spark.sql.{Row, SparkSession}
-
 /**
   * Created by zhaogj on 20/03/2017.
   */
