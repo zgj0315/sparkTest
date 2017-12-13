@@ -16,8 +16,9 @@ object ReadKafka {
     val krb5ConfPath = "/Users/zhaogj/github/zgj0315/sparkTest/config/krb5.conf"
 
     val hadoopConf: Configuration = new Configuration();
+    println("before login")
     LoginUtil.login(userPrincipal, userKeytabPath, krb5ConfPath, hadoopConf)
-    print("after login")
+    println("after login")
     val topics = "topic_message_spark"
     val brokers = "172.16.36.202:21007,172.16.36.201:21007,172.16.36.200:21007"
 //    val brokers = "172.16.12.104:9092"
