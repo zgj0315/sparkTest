@@ -6,10 +6,10 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.10.6"
 )
 
-unmanagedBase := baseDirectory.value / "lib_huawei"
-
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(
-    name := "SparkStreamingTest"
+    name := "SparkStreamingTest",
+    libraryDependencies += "org.apache.spark" % "spark-streaming_2.10" % "1.5.1",
+    libraryDependencies += "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.5.1"
   )
