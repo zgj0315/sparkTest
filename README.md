@@ -3,9 +3,9 @@
 
 2.x相比1.x各种高效各种好用，必须要学习
 # 版本
-hadoop 2.7.3, spark 2.1.0, scala 2.11.8, jdk 1.8
+hadoop 2.7.3, spark 2.2.1, scala 2.11.12, jdk 1.8
 # 构建工具
-sbt
+sbt 1.0.4
 # 文档
 
 # 单元测试
